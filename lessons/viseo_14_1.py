@@ -23,6 +23,7 @@ class Clock:
         m = (self.seconds // 60) % 60
         h = (self.seconds // 3600) % 24
         result = f'{self.__get_formatted(h)}:{self.__get_formatted(m)}:{self.__get_formatted(s)}'
+        # result = f'{h:02d}:{m:02d}:{s:02d}' # аналог предыдущ строки чб не прописывать функцию
         return result
 
     @classmethod
@@ -106,3 +107,6 @@ c8 =  c6 - c1 - c2 - c3
 print(f'c8 = {c8.get_time()}')
 c8 -= 600
 print(f'c8 = {c8.get_time()}')
+
+# А ТЕПЕРЬ ИЗМЕНИ КОД ЧТОБЫ НЕ БЫЛО ФУНКЦИОНАЛЬНОЙ ПОВТОРЯЕМОСТИ ?
+# Используй Дескрипторы (см. video_11_2)
