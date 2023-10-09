@@ -1,3 +1,4 @@
+#39. Python Data Classes при наследовании
 from dataclasses import dataclass, field, InitVar
 from typing import Any
 
